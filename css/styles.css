@@ -4635,7 +4635,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4665,6 +4665,12 @@ textarea.form-control-lg {
 }
 
 .card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: #000;
+}
+
+.card-body-contact {
   flex: 1 1 auto;
   padding: 1rem 1rem;
   background-color: #a72f2f;
@@ -7939,6 +7945,25 @@ textarea.form-control-lg {
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  text-align: left;
+  font-family: Raleway;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-lightbulb {
+  color: #fff;
+  font-size: 300%;
+}
+
+.fa-users {
+  color: #fff;
+  font-size: 300%;
+}
+
+.fa-code {
+  color: #fff;
+  font-size: 300%
 }
 
 .text-white {
@@ -7973,9 +7998,9 @@ textarea.form-control-lg {
   color: #fff !important;
   font-family: "raleway";
   text-align: left;
-  margin-left: 10rem;
   position: relative;
-  left: -20rem; top: 1rem;
+  /*left: -20rem; top: 1rem;
+  margin-left: 10rem;*/
 }
 
 .text-white-yourmom2 {
@@ -7983,9 +8008,9 @@ textarea.form-control-lg {
   color: #fff !important;
   font-family: "raleway";
   text-align: left;
-  margin-left: 18rem;
   position: relative;
-  bottom: 17rem;
+  /*bottom: 17rem;
+  margin-left: 18rem;*/
 }
 
 .text-white-yourmom3 {
@@ -7994,9 +8019,9 @@ textarea.form-control-lg {
   font-family: "raleway";
   text-align: left;
   position: relative;
-  bottom: 31rem; right: 0rem;
+  /*bottom: 31rem; right: 0rem;*/
 }
-
+/*
 .idea {
   position: relative;
   left: -31rem; top: -1rem;
@@ -8011,7 +8036,7 @@ textarea.form-control-lg {
   position: relative;
   right: -30rem; top: -35rem;
 }
-
+*/
 .text-reset {
   --bs-text-opacity: 1;
   color: inherit !important;
