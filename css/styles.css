@@ -644,6 +644,10 @@ progress {
   margin-left: auto;
 }
 
+.container-px-4-px-lg-5 {
+  font-family: "Raleway";
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -7951,6 +7955,10 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
+.text-black-100 {
+  font-family: "Raleway";
+}
+
 .fa-lightbulb {
   color: #fff;
   font-size: 300%;
@@ -7972,6 +7980,11 @@ textarea.form-control-lg {
   font-family: "freehouse";
 }
 
+.text-white-mb-4 {
+  color: #fff;
+  font-family: "freehouse";
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-rgb), var(--bs-text-opacity)) !important;
@@ -7979,7 +7992,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #fff !important;
 }
 
 .text-black-50 {
