@@ -216,9 +216,36 @@
                         <div class="card py-0 h-100">
                             <div class="card-body-contact text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">AMA</h4>
+                                <h4 class="text-uppercase m-0">Get in touch!</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black"><input type="text" placeholder="Type here"><br><button>Send</button></div>
+                                <div class="small text-black">
+                                    <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                        <!-- Email address input-->
+                                        <div class="row input-group-newsletter">
+                                            <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Send</button></div>
+                                        </div>
+                                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                                        <!-- Submit success message-->
+                                        <!---->
+                                        <!-- This is what your users will see when the form-->
+                                        <!-- has successfully submitted-->
+                                        <div class="d-none" id="submitSuccessMessage">
+                                            <div class="text-center mb-3 mt-2 text-white">
+                                                <div class="fw-bolder">Form submission successful!</div>
+                                                To activate this form, sign up at
+                                                <br />
+                                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            </div>
+                                        </div>
+                                        <!-- Submit error message-->
+                                        <!---->
+                                        <!-- This is what your users will see when there is-->
+                                        <!-- an error submitting the form-->
+                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,7 +256,6 @@
                     <a class="mx-2" href="https://github.com/dannycares/"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-        </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Danny Herrera 2021</div></footer>
         <!-- Bootstrap core JS-->
